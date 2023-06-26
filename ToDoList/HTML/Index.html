@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icono -->
+    <link rel="shortcut icon" href="/ToDoList/ICONOS/icononavr.png" type="icon">
+    <!-- link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Link de CSS-->
+    <link rel="stylesheet" href="../CSS/Styles.css">
+     <!-- Link de fuentes-->
+     <script src="https://kit.fontawesome.com/7fff13d81a.js" crossorigin="anonymous"></script>
+     <!-- titulo-->
+    <title>VerdeMenta</title>
+</head>
+<body class="flex-container" id="body">
+    <!-- barra de navegacion-->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand mb-" href="#"> <img src="/ToDoList/IMAGENES/Logo.png" width="80%" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quienes-somos">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.dietacoherente.com/blog/">Dietas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ToDoList/HTML/Rutinas.html">Rutinas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ToDoList/HTML/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--carrusel-->
+    <div id="carouselExample" class="carousel slide contenedor-banner ">
+        <div class="carousel-inner">
+          <div class="carousel-item active">  
+            <img src="/ToDoList/IMAGENES/mujercocinando.jpg" class="d-block w-100" width="100%" alt="foto de flor">   
+          </div>
+          <div class="carousel-item">
+            <img src="/ToDoList/IMAGENES/Funcional.jpg" class="d-block w-100" width="100%" alt="foto de auto">
+          </div>
+          <div class="carousel-item">
+            <img src="/ToDoList/IMAGENES/yogabanner.jpg" class="d-block w-100"  width="100%"  alt="foto de camara">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--flex box-->
+<div class="box-inline">
+  <span class="div1"> <a href="https://www.dietacoherente.com/categoria-producto/menus-sanos-y-equilibrados/"><img src="/ToDoList/IMAGENES/Webp.net-resizeimage (1).jpg"  alt=""></a><p>Dietas personalizadas</p></span>
+  <span class="div2"> <a href="/ToDoList/HTML/Rutinas.html"><img src="/ToDoList/IMAGENES/Webp.net-resizeimage (2).jpg" alt=""></a> <p>Rutinas </p></span>
+  <span class="div3"> <a href="/ToDoList/HTML/Contacto.html"><img src="/ToDoList/IMAGENES/Webp.net-resizeimage (3).jpg" alt=""> </a><p>Seguimiento profesional</p></span>
+</div>
+<!--quienes somos-->
+<div class="quienes-somos" id="quienes-somos">
+  <h1>¿Quienes somos?</h1>
+  <p>Somos un equipo de profesionales comprometidos con la vida sana y la alimentación saludable. Nuestro objetivo es el  brindar asesoramiento nutricional para la elaboración de menús sanos y equilibrados. Con la dirección técnica de nuestro equipo de dietistas-nutricionistas. y rutinas personalizadas de entrenamiento que permitan alcanzar los objetivos desados.</p>
+</div>
+<div class="ToDoList">
+  <span class="ToDoList-p"><p>Prueba gratis nuestra ToDoList de seguimiento,  donde podras anotar tus comidas y ejercicios</p></span>
+  <span class="ToDoList-foto"> <a href="/ToDoList/HTML/todolist2.html"><img src="/ToDoList/IMAGENES/ToDoList.png.jpg"  alt=""> </a><p>Haz click en la imagen</p></span>
+</div>
+<!--footer-->    
+   <footer>
+    <div class="footer-contenedor">
+   
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul class="informacion-de-Contacto">
+            <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal, Ciudad</li>
+            <li><i class="fas fa-phone"></i> Teléfono: 123-456-789</li>
+            <li><i class="fas fa-envelope"></i> Email: info@tudominio.com</li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Redes Sociales</h3>
+          <div class="iconos">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-column2">
+          <h3>Navegación</h3>
+          <ul class="footer-navegacion">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
+    </body>
+
+</html>

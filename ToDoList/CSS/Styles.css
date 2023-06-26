@@ -1,0 +1,177 @@
+
+/*-- contenedor principal en el body-->*/
+.flex-container{
+    background-color: rgb(43, 226, 150);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  
+}
+
+/*-- barra de navegacion-->*/
+#nav{
+    justify-content:right;
+    margin-right: 5%;       
+}
+.navbar{
+    box-shadow: 0px 8px 15px;
+    padding-bottom: 0%;
+    margin: 10px;
+    padding: 1%;   
+} 
+
+.container-fluid{
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+   
+}
+
+.nav-link:hover{
+    line-height: 170px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(43, 226, 150);
+
+}
+
+.contenedor-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 3%;
+    
+}
+
+/*Row de imagenes*/
+.box-inline {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*border: solid 1px;*/
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.div1, .div2, .div3 {
+    background-color: aliceblue;  
+   
+    margin: 1%;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 7, 14);
+}
+
+.box-inline span :hover{
+ filter: grayscale(100);
+}
+
+.box-inline p{
+  /*border: solid 1px;*/
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+/*quines somos?*/
+
+.quienes-somos{
+  align-self: center;
+  text-align: center;
+  margin-bottom: 2%;
+  width: 80%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+
+}
+
+ 
+/*-- ToDolist-->*/
+
+  .ToDoList{
+    display: flex;
+    align-self: center;
+    width: 50%;
+    height: 200px;
+    margin: 7%;
+    border: solid;
+  }
+
+  .ToDoList-p{
+    width: 70%;
+    text-align: center;
+    padding: 3%;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    font-size: 150%;
+  }
+
+  .ToDoList-foto{ 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+    width: 30%;
+    
+  }
+
+  .ToDoList-foto img{
+    width: 85%;
+  }
+
+  
+/*-- footer-->*/
+.footer-contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: aliceblue;
+}
+
+.footer-column, .footer-column2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.footer-column2{
+  margin-right: 3%;
+}
+
+.informacion-de-Contacto {
+  list-style: none;
+  padding: 0;
+  text-align:center;
+}
+
+.footer-navegacion{
+  text-align:center;
+  list-style: none;
+  padding: 0;
+ 
+}
+
+.footer-navegacion li a {
+  color: #000000;
+  text-decoration: none;
+  
+}
+
+.footer-navegacion li a:hover {
+  text-decoration: underline;
+}
+
+.iconos i{
+  color: rgb(11, 32, 24);
+}
