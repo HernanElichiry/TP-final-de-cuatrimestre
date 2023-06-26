@@ -1,4 +1,4 @@
-const formulario = document.getElementById("formulario"); //1.capto el formulario
+const formulario = document.getElementById("form"); //1.capto el formulario
 
 //2.creo el array donde se va a almacenar los datos
 const datos = [];
@@ -9,7 +9,7 @@ formulario.addEventListener("submit", CaptardatosIngresados);
 //4.creo una funcion para capatar los datos input
 function CaptardatosIngresados(e) {
     e.preventDefault();
-    const tareainput = document.getElementById("tarea-input"); //capto el input del formulario
+    const tareainput = formulario.querySelector("#tarea-input"); //capto el input del formulario
     const tarea = tareainput.value.trim();
     if(tarea != ""){
         const newtarea = {
@@ -27,7 +27,7 @@ function CaptardatosIngresados(e) {
 //5.creo funcion para enviar los datos ingresados al dom y mostrarlos en la tabla
 function EnviarDatosaLaTabla(){
     const CuerpoDeLaTabla = document.querySelector("#table tbody") //capturo el cupero de la tabla 
-    CuerpoDeLaTabla.innerHTML("");// Iniciamos la tabla en blanco??
+    CuerpoDeLaTabla.innerHTML = "";// Iniciamos la tabla en blanco??
     datos.forEach(dato => {   //recorro el arreglo 
         const row = document.createElement("tr") //creo una fila donde voy a poner los elementos del array 
         //tr es igual a table row. tabla horizontal.
