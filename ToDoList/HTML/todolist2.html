@@ -27,7 +27,22 @@
        <tbody>
 
        </tbody>
-      </table>
+      </table> 
+      <dialog id="TodoModal">
+        <form action="" id="EditTodoForm">
+          <label for="todoId">ID:</label>
+          <input type="text" id="todoId" disabled>
+          <label for="todoDescriptionModal">Description:</label>
+          <input type="text" id="todoDescriptionModal">
+          <p id="statustext"></p>
+          <button type="button" id="deletebutton">delete task</button>
+          <button type="submit" id="updatebutton">update task</button>
+          <button type="button" id="statusbutton">toggle status</button>
+          <button type="button" id="cancelbutton">cancel</button>
+        </form>
+      </dialog>
+
+
 
       <script src="/ToDoList/JS/Todolist2.js"></script>
 </body>

@@ -13,13 +13,14 @@ function CaptardatosIngresados(e) {
     const tarea = tareainput.value.trim();
     if(tarea != ""){
         const newtarea = {
-            id: 1,
+            id: generatedID(),
             description: tarea,
-            status: false,
+            isCompleted: false,
         };
         datos.push(newtarea);       
 //ahora capte los datos pero necesito que esos datos se envien al dom para que aparezacan en la tabla o produzcan cambios en la tabla.
         EnviarDatosaLaTabla();
+        formulario.reset(); // borro el formulario una vez enviado
         
     }    
 }
@@ -37,7 +38,7 @@ function EnviarDatosaLaTabla(){
 
         const idcell = document.createElement("td");
         idcell.textContent = dato.id;
-        row.appendChild(idcell)  //creo las celdas que  van a integrar la fila 
+        row.appendChild(idcell)  //creo las celdas que  van a integrar la fila. se trata de 3 "table data" 
 
         const descriptioncell = document.createElement("td");
         descriptioncell.textContent = dato.description;
@@ -49,14 +50,50 @@ function EnviarDatosaLaTabla(){
 
         CuerpoDeLaTabla.appendChild(row)//le agrego al cuerpo de la tabla la fila row con  sus 3 celdas
 
-
-        
-
     });
 
 }
 
-//funcion para hacer click en el row
-function rowclick(){
+//6.al hacer click en el row esta funcion obtengo los valores del array de la fila
+function rowclick(e){
+ const todoid = e.currentTarget.getAttribute("data-dato-id");
+ const todo = datos.find(todo => todo.id === Number(todoid));//con el tipo number convierto el array.
+
+const InputModalId = EditTodoForm.querySelector("#todoId");
+const inputDescriptionModal = EditTodoForm.querySelector("#todoDescriptionModal");
+const  statustext = document.getElementById("statustext");
+
+InputModalId.value = todo.id;
+inputDescriptionModal.value = todo.description;
+TodoModal.showModal();//caracteristica de los modales
 
 };
+
+//7.funcion para aumentar la celda que contiene el ID
+function generatedID(){
+    if(datos.length === 0){
+         return 1;
+    } else {
+        const lasttodo = datos [datos.length - 1];
+        return lasttodo.id + 1;
+    }
+}
+
+//8.capturo los datos de la ventana modal (ventana emergente) del html que se abre al hacer click en el row
+const EditTodoForm = document.getElementById("EditTodoForm");
+const TodoModal = document.getElementById("TodoModal"); 
+
+const deletebutton = document.getElementById("deletebutton");
+const updatebutton  = document.getElementById("updatebutton");
+const statusbutton  = document.getElementById("statusbutton");
+const cancelbutton  = document.getElementById("cancelbutton");
+
+
+//9. escucho los eventos
+EditTodoForm.addEventListener("submit", UpdateButtonfunction);//redundante
+
+statusbutton.addEventListener("click", StatusButtonfunction);
+deletebutton.addEventListener("click", DeleteButtonfunction);
+cancelbutton.addEventListener("click", () => TodoModal.close());//funcion adentro del lisener, como la funcion es muy breve no la creo por separado
+
+//10. 
