@@ -1,14 +1,5 @@
 
 
-/*-- contenedor principal en el body-->*/
-.flex-container{
-    background-color: rgb(253, 253, 253);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lucida Sans';
-    
-}
-
 /*-- barra de navegacion-->*/
 
 .navbar{
@@ -35,76 +26,43 @@
 /*-- ToDoList-->*/
 
 .Todolist{
-  
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-  
+  width: 80%;
+  margin-left: 10%; 
+  background-color: rgb(43, 226, 150);
+  padding-top: 3%;}
+
+.Todolist h1{
+  text-align: center;
+  font-size: 500%;
+  color: aliceblue;
+
 }
-
-.encabezado{
-display: flex;
-justify-content: center;
-flex-direction: column;
-background-color: rgb(43, 226, 150);
-width: 80%;
-
-    
-}
-
-.encabezado h1{
-    text-align: center;
-    color: aliceblue;
-    font-size: 50px;
-}
-
-.encabezado button{
-    padding: 0.5rem;
-    border: none;
-    background-color: rgb(151, 151, 147);
-    color: white;
-    cursor: pointer;
-}
-
-.encabezado input{
-    padding: 2%;     
-    margin-bottom: 5px;
-}
-
-  #add-button:hover {
-    background-color: #242e25;
-  }
-  
-  #tarea-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .tarea-item {
-    margin-bottom: 5px;
-    background-color: rgb(248, 236, 68);
-    padding: 1%;
-    font-size: 20px;
-  }
-
-  
-  .tarea-item.completed {
-    text-decoration: line-through;
-    color: #f0e9e9;
-    background-color: rgb(51, 47, 46);
-
-  }
-
-.tarea{
-  display: flex;
-  justify-content: center;
-  
+#form {
   width: 100%;
 }
- .tarea ul {
-  width: 80%;
+
+#form input{
+  width: 60%;
+  padding: 15px;
+  border: none;
+  margin-left: 1%;
+
+}
+#form button{
+  width: 37%;
+  border: none;
+  padding: 15px;
+  margin-right: 0%;
 }
 
+#table{
+  width: 100%;
+  margin-top: 2%;
+}
 
-
+#table th, td{
+  
+  background-color: aliceblue;
+}
+  
 
