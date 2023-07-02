@@ -1,0 +1,101 @@
+
+/*-- barra de navegacion-->*/
+
+.navbar{
+    box-shadow: 0px 8px 15px;
+    padding-bottom: 0%;
+    margin: 0px;
+    padding: 0%;   
+} 
+
+.container-fluid{
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;  
+}
+
+.nav-link:hover{
+    line-height: 200px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(43, 226, 150);
+}
+
+/*-- todo list-->*/
+  .taskList {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+ 
+  .taskList li {
+    padding: 12px 8px 12px 40px;
+    background-color: #f1f1a6;
+    font-size: 20px;
+    
+  }
+  
+  ul li:hover {
+    background: #afa9a9;
+  }
+  
+  
+  .header {
+    
+    background-color: rgb(43, 226, 150);
+    padding: 40px 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 260px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .header h2 {
+    font-size: 50px;
+  } 
+ 
+  .header p{
+    
+    width: 80%;
+    margin-left: 10%; 
+    
+  }
+  
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+ 
+  .addBtn {
+    border: none;
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+   
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+  
+  
+  .completed {
+      text-decoration: line-through;
+      color: #000000;
+      
+  
+  }

@@ -22,10 +22,7 @@
 } 
 
 .container-fluid{
-    flex-direction: row;
-    justify-content: space-between;
     height: 80px;
-   
 }
 
 .nav-link:hover{
@@ -34,8 +31,6 @@
     background-color: rgb(43, 226, 150);
 
 }
-
-
 /*Imagenes*/
 .contenedor-banner{
     display: flex;
@@ -109,7 +104,6 @@
     width: 70%;
     text-align: center;
     padding: 3%;
-    font-size: 17px;
     font-weight: bold;
     background-color: rgb(255, 255, 255);
     font-size: 150%;
