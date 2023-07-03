@@ -42,35 +42,40 @@
   
   
   .header {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(43, 226, 150);
-    padding: 40px 30px;
+    padding-top: 2%;
     color: rgb(255, 255, 255);
     text-align: center;
-    height: 260px;
+    height: 250px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
     margin-left: 10%;
+
   }
   
   .header h2 {
     font-size: 50px;
   } 
  
-  .header p{
-    
+  .header p{  
     width: 80%;
-    margin-left: 10%; 
     
   }
   
-  input {
+  .span{
+    width: 100%;
+  }
+  
+  .span input {
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 72%;
     padding: 10px;
-    float: left;
+    
     font-size: 16px;
   }
   
@@ -81,7 +86,6 @@
     width: 25%;
     background: #d9d9d9;
     color: #555;
-    float: left;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
@@ -97,5 +101,5 @@
       text-decoration: line-through;
       color: #000000;
       
-  
   }
+
